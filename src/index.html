@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link href="./output.css" rel="stylesheet" />
+	</head>
+	<body>
+		<h1 class="text-xl text-blue-950 font-medium">PARKING COST CALCULATOR</h1>
+		<form action="">
+			<div class="grid grid-cols-2 grid-rows-4 h-52 w-1/3 mt-3">
+				<h1
+					class="title border-solid border-4 border-gray-300 text-lg flex items-center pl-2"
+				>
+					Choose a parking lot
+				</h1>
+				<div
+					class="border-solid border-4 border-gray-300 text-lg flex items-center pl-2"
+				>
+					<select name="Park" id="park" class="pl-2">
+						<option value="Lot Parking">Lot Parking</option>
+						<option value="Hourly Parking">Hourly Parking</option>
+						<option value="Garage Parking">Garage Parking</option>
+						<option value="Surface Parking">Surface Parking</option>
+					</select>
+					<br /><br />
+				</div>
+				<h1
+					class="border-solid border-4 border-gray-300 text-lg flex items-center pl-2"
+				>
+					Please Input Entry Date and Time
+				</h1>
+				<div
+					class="border-solid border-4 border-gray-300 text-lg flex items-center pl-2"
+				>
+					<input type="date" />
+					<input type="time" class="pl-8" />
+				</div>
+				<h1
+					class="border-solid border-4 border-gray-300 text-lg flex items-center pl-2"
+				>
+					Please Input Leaving date and time
+				</h1>
+				<div
+					class="border-solid border-4 border-gray-300 text-lg flex items-center pl-2"
+				>
+					<input type="date" />
+					<input type="time" class="pl-8" />
+				</div>
+				<h1
+					class="border-solid border-4 border-gray-300 text-xl text-blue-950 font-medium flex items-center pl-2"
+				>
+					ESTIMATED PARKING COST
+				</h1>
+				<h1
+					class="TotalCost border-solid border-4 border-gray-300 text-xl text-blue-950 font-medium flex items-center pl-2"
+				>
+					$0
+				</h1>
+			</div>
+			<button
+				type="button"
+				class="calculate-button bg-gray-300 rounded-md text-base py-1 px-1 mt-2 border border-black"
+			>
+				Calculate
+			</button>
+		</form>
+		<h3 class="my-5 text-blue-950 text-lg font-semibold">PARKING RATES</h3>
+		<div>
+			<h3 class="font-medium text-lg">Valet Parking</h3>
+			<h5>$18 per day</h5>
+			<h5>$12 for five hours or less</h5>
+		</div>
+		<div class="mt-5">
+			<h3 class="font-medium text-lg">Short-Term (hourly) Parking</h3>
+			<h5>$2.00 first hour; $1 each additional 1/2 hour</h5>
+			<h5>$24.00 daily maximum</h5>
+		</div>
+		<div class="mt-5">
+			<h3 class="font-medium text-lg">Long-Term Garage Parking</h3>
+			<h5>$2.00 per hour</h5>
+			<h5>$12.00 daily maximum</h5>
+			<h5>$72.00 per week (7th day free)</h5>
+		</div>
+		<div class="mt-5">
+			<h3 class="font-medium text-lg">Long-Term Surface Parking (North Lot)</h3>
+			<h5>$2.00 per hour</h5>
+			<h5>$10.00 daily maximum</h5>
+			<h5>$60.00 per week (7th day free)</h5>
+		</div>
+		<div class="mt-5">
+			<h3 class="font-medium text-lg">Economy Lot Parking</h3>
+			<h5>$2.00 per hour</h5>
+			<h5>$9.00 daily maximum</h5>
+			<h5>$54.00 per week (7th day free)</h5>
+		</div>
+		<h3 class="mt-5 italic">
+			A Lost Ticket Fee of $10.00 will be asessed when the original parking stub
+			cannot be produce when the exiting the parking facilities (does not apply
+			to valet parking)
+		</h3>
+	</body>
+	<script src="app.js"></script>
+</html>
