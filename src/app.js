@@ -43,6 +43,12 @@ document.querySelector(".calculate-button").addEventListener("click", () => {
 			totalCost = Math.min(10, totalHours * 2);
 			totalCost = Math.min(totalCost, 60);
 			break;
+		case "Valet Parking":
+			if (totalHours <= 5) {
+				totalCost = 12; // Valet Parking cost for 5 hours or less
+			} else {
+				totalCost = totalDays * 18; // Valet Parking daily rate
+			}
 		default:
 			break;
 	}
